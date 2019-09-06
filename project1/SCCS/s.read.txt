@@ -1,0 +1,37 @@
+h31819
+s 00004/00002/00007
+d D 1.2 19/04/14 20:19:45 nzenger 2 1
+c 1.2
+e
+s 00009/00000/00000
+d D 1.1 19/03/10 20:10:35 nzenger 1 0
+c date and time created 19/03/10 20:10:35 by nzenger
+e
+u
+U
+f e 0
+t
+T
+I 1
+D 2
+1234+Nathan Zenger+PO Box 1182
+E 2
+I 2
+6473+Bradley Duffon+Town rd
+PO Box 6382
++1234+Nathan Zenger+PO Box 1182
+E 2
+637485
++5473+Sarah Alison+PO Box 6483
+647384
++739483+Andrew Matt+
+PO Box 6132
+2847619
+D 2
++7492+Tyler bing+Road st 73849
+E 2
+I 2
++7492+Tyler Bing+Road st 73849
+E 2
+PO Box 8493
+E 1

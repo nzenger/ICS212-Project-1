@@ -1,0 +1,410 @@
+Script started on Sun 14 Apr 2019 09:12:43 PM HST
+uhx02:/home/n/nzenger/project1% ls
+proof.txt  [0m[01;34mSCCS[0m
+uhx02:/home/n/nzenger/project1% lsexitsh getrelease.shexit[Ksh getrelease.shcat getrelease.shhmod +x getrelease.shsccs get -r1.9 getrelease.sh
+get: warning: SCCS/s.getrelease.sh: No id keywords.
+1.9
+20 lines
+uhx02:/home/n/nzenger/project1% sccs get -r1.9 getrelease.shls[Kexitsh getrelease.shcat getrelease.shhmod +x getrelease.sh
+uhx02:/home/n/nzenger/project1% chmod +x getrelease.shsccs get -r1.9 getrelease.shls[Kexitsh getrelease.shcat getrelease.shhmod +x getrelease.shat getrelease.sh[K
+sccs get -r1.1 makefile
+sccs get stubs.c
+sccs get stubs.h
+sccs get -r1.1 record.h
+sccs get menu.c
+make
+rm -f -r makefile
+rm -f -r stubs.c
+rm -f -r stubs.h
+rm -f -r record.h
+rm -f -r menu.c
+rm -f -r menu.o
+rm -f -r stubs.o
+rm -f -r project1
+rm -f -r getrelease.sh
+
+
+
+
+
+uhx02:/home/n/nzenger/project1% cat getrelease.shhmod +x getrelease.shsccs get -r1.9 getrelease.shls[Kexitsh getrelease.sh
+get: warning: SCCS/s.makefile: No id keywords.
+1.1
+14 lines
+get: warning: SCCS/s.stubs.c: No id keywords.
+1.1
+255 lines
+get: warning: SCCS/s.stubs.h: No id keywords.
+1.1
+34 lines
+get: warning: SCCS/s.record.h: No id keywords.
+1.1
+31 lines
+get: warning: SCCS/s.menu.c: No id keywords.
+1.2
+313 lines
+cc    -c -o menu.o menu.c
+[01m[Kmenu.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmenu.c:45:9:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrcmp[m[K’ from incompatible pointer type [enabled by default]
+         if(strcmp(argv[1],"debug") == 0){
+[01;32m[K         ^[m[K
+In file included from [01m[Kmenu.c:22:0[m[K:
+[01m[K/usr/include/string.h:140:12:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar **[m[K’
+ extern int strcmp (const char *__s1, const char *__s2)
+[01;32m[K            ^[m[K
+[01m[Kmenu.c:51:13:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’ [enabled by default]
+             exit(0);
+[01;32m[K             ^[m[K
+[01m[Kmenu.c:56:9:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’ [enabled by default]
+         exit(0);
+[01;32m[K         ^[m[K
+[01m[Kmenu.c:196:13:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KdeleteRecord[m[K’ from incompatible pointer type [enabled by default]
+             deleteRecord(start, number);
+[01;32m[K             ^[m[K
+In file included from [01m[Kmenu.c:23:0[m[K:
+[01m[Kstubs.h:29:5:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct record **[m[K’ but argument is of type ‘[01m[Kstruct record *[m[K’
+ int deleteRecord(struct record **, int);
+[01;32m[K     ^[m[K
+cc    -c -o stubs.o stubs.c
+[01m[Kstubs.c:[m[K In function ‘[01m[KdeleteRecord[m[K’:
+[01m[Kstubs.c:127:8:[m[K [01;35m[Kwarning: [m[Kassignment from incompatible pointer type [enabled by default]
+   curr = start;
+[01;32m[K        ^[m[K
+[01m[Kstubs.c:128:8:[m[K [01;35m[Kwarning: [m[Kassignment from incompatible pointer type [enabled by default]
+   prev = start;
+[01;32m[K        ^[m[K
+g++ menu.o stubs.o -o project1 
+uhx02:/home/n/nzenger/project1% ls
+proof.txt  [0m[01;34mSCCS[0m
+uhx02:/home/n/nzenger/project1% lssh getrelease.shcat getrelease.shhmod +x getrelease.shsccs get -r1.9 getrelease.sh getrelease.sh[K getrelease.sh[K getrelease.sh[K1 getrelease.sh. getrelease.sh1 getrelease.sh5 getrelease.sh
+get: warning: SCCS/s.getrelease.sh: No id keywords.
+1.15
+20 lines
+uhx02:/home/n/nzenger/project1% sccs get -r1.15 getrelease.shls[Ksh getrelease.shcat getrelease.shhmod +x getrelease.shsccs get -r1.9 getrelease.shchmod +x getrelease.sh[K
+uhx02:/home/n/nzenger/project1% chmod +x getrelease.shsccs get -r1.15 getrelease.shls[Ksh getrelease.shcat getrelease.sh
+sccs get -r1.4 makefile
+sccs get llist.h
+sccs get -r1.2 record.h
+sccs get interface.cpp
+sccs get -r1.2 read.txt
+sccs get llist.cpp
+make
+./Project2
+rm -f -r makefile
+rm -f -r llist.cpp
+rm -f -r llist.h
+rm -f -r record.h
+rm -f -r interface.cpp
+rm -f -r Project2
+rm -f -r getrelease.sh
+rm -f -r read.txt
+
+
+
+
+uhx02:/home/n/nzenger/project1% cat getrelease.shhmod +x getrelease.shsccs get -r1.15 getrelease.shls[Ksh getrelease.sh
+get: warning: SCCS/s.makefile: No id keywords.
+1.4
+11 lines
+get: warning: SCCS/s.llist.h: No id keywords.
+1.1
+14 lines
+get: warning: SCCS/s.record.h: No id keywords.
+1.2
+31 lines
+get: warning: SCCS/s.interface.cpp: No id keywords.
+1.1
+185 lines
+get: warning: SCCS/s.read.txt: No id keywords.
+1.2
+11 lines
+get: warning: SCCS/s.llist.cpp: No id keywords.
+1.1
+604 lines
+g++ interface.cpp llist.cpp  -D_DEBUG -o Project2 
+DEBUGGER--> llist::llist() has been called with no parameters passed in
+DEBUGGER--> llist::readfile() has been called with no parameters passed
+DEBUGGER--> addRecord(int,char*,char*) has been called and passed in int: 6473, char*: Bradley Duffon, char*:Town rd
+PO Box 6382
+
+DEBUGGER--> addRecord(int,char*,char*) has been called and passed in int: 1234, char*: Nathan Zenger, char*:PO Box 1182
+637485
+
+DEBUGGER--> addRecord(int,char*,char*) has been called and passed in int: 5473, char*: Sarah Alison, char*:PO Box 6483
+647384
+
+DEBUGGER--> addRecord(int,char*,char*) has been called and passed in int: 739483, char*: Andrew Matt, char*:
+PO Box 6132
+2847619
+
+DEBUGGER--> addRecord(int,char*,char*) has been called and passed in int: 7492, char*: Tyler Bing, char*:Road st 73849
+PO Box 8493
+
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:0
+
+Enter a name:
+Tom Nook
+Enter a account number:
+6382
+DEBUGGER--> getaddress(char*,int) has been called and passed in char*: , int: 80
+Enter an address(type 'exit' followed by the enter key to end input):Village City
+PO Box 8394
+exit
+DEBUGGER--> addRecord(int,char*,char*) has been called and passed in int: 6382, char*: Tom Nook, char*:Village City
+PO Box 8394
+
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:1
+
+Enter a account number:
+1234
+DEBUGGER--> llist::printRecord(int) has been called and passed in int: 1234
+Database record:
+Name:
+Nathan Zenger
+Account Number:
+1234
+Address:
+PO Box 1182
+637485
+
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:2
+
+DEBUGGER--> std::ostream & llist::operator<<(std::ostream & out) has been called and passed in std::ostream
+All of Database:
+Name:
+Bradley Duffon
+Account Number:
+6473
+Address:
+Town rd
+PO Box 6382
+
+Name:
+Nathan Zenger
+Account Number:
+1234
+Address:
+PO Box 1182
+637485
+
+Name:
+Sarah Alison
+Account Number:
+5473
+Address:
+PO Box 6483
+647384
+
+Name:
+Andrew Matt
+Account Number:
+739483
+Address:
+
+PO Box 6132
+2847619
+
+Name:
+Tyler Bing
+Account Number:
+7492
+Address:
+Road st 73849
+PO Box 8493
+
+Name:
+Tom Nook
+Account Number:
+6382
+Address:
+Village City
+PO Box 8394
+
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:3
+
+Enter the first key characters of a name to search for:
+Bing
+DEBUGGER--> llist::findRecords(char*) has been called and passed in char*: Bing
+Found Records:
+    Name: Tyler Bing
+    Account Number: 7492
+    Address: Road st 73849
+PO Box 8493
+
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:4
+
+Enter a account number:
+7492
+DEBUGGER--> llist::deleteRecord(int) has been called and passed in int: 7492
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:2
+
+DEBUGGER--> std::ostream & llist::operator<<(std::ostream & out) has been called and passed in std::ostream
+All of Database:
+Name:
+Bradley Duffon
+Account Number:
+6473
+Address:
+Town rd
+PO Box 6382
+
+Name:
+Nathan Zenger
+Account Number:
+1234
+Address:
+PO Box 1182
+637485
+
+Name:
+Sarah Alison
+Account Number:
+5473
+Address:
+PO Box 6483
+647384
+
+Name:
+Andrew Matt
+Account Number:
+739483
+Address:
+
+PO Box 6132
+2847619
+
+Name:
+Tom Nook
+Account Number:
+6382
+Address:
+Village City
+PO Box 8394
+
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:5
+
+DEBUGGER--> llist:reverse() has been called with no parameters passed in
+DEBUGGER--> llist:reverse(struct record*) has been called and passed in struct record*
+DEBUGGER--> llist:reverse(struct record*) has been called and passed in struct record*
+DEBUGGER--> llist:reverse(struct record*) has been called and passed in struct record*
+DEBUGGER--> llist:reverse(struct record*) has been called and passed in struct record*
+DEBUGGER--> llist:reverse(struct record*) has been called and passed in struct record*
+List had been reversed...
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:2
+
+DEBUGGER--> std::ostream & llist::operator<<(std::ostream & out) has been called and passed in std::ostream
+All of Database:
+Name:
+Tom Nook
+Account Number:
+6382
+Address:
+Village City
+PO Box 8394
+
+Name:
+Andrew Matt
+Account Number:
+739483
+Address:
+
+PO Box 6132
+2847619
+
+Name:
+Sarah Alison
+Account Number:
+5473
+Address:
+PO Box 6483
+647384
+
+Name:
+Nathan Zenger
+Account Number:
+1234
+Address:
+PO Box 1182
+637485
+
+Name:
+Bradley Duffon
+Account Number:
+6473
+Address:
+Town rd
+PO Box 6382
+
+Option(0): Add a new record in the database
+Option(1): Print information about a record using the accountno as the key
+Option(2): Print all information in the database
+Option(3): Find a record that is stored in the database
+Option(4): Delete an existing record from the database using the accountno as a key
+Option(5): Reverse the order of all the records in the list
+Option(6): Quit the program
+Enter option number:6
+
+Exiting Program...
+DEBUGGER--> llist::~llist() has been called with no parameters passed in
+DEBUGGER--> llist::writefile() has been called with no parameters passed
+DEBUGGER--> llist::cleanup() has been called with no parameters passed
+uhx02:/home/n/nzenger/project1% exit
+exit
+
+Script done on Sun 14 Apr 2019 09:15:02 PM HST
